@@ -48,7 +48,7 @@ With this, you can now generate your .mobi file with KindlePeriodical:
         "outputFolder" => "out",
         
         // Optional arguments:
-        "shell" => false, // KindlePeriodical will use pcntl_exec
+        "shell" => false, // KindlePeriodical will use exec instead of shell_exec
         "debug" => true
 
     ));

@@ -396,7 +396,12 @@ class KindlePeriodical
     {
 
         $generate = 'cd ' . $this->directory . '; kindlegen -c2 content.opf -o ' . $this->filename . '.mobi';
-        $output = shell_exec($generate . " 2>&1");
+
+        if($this->shell == true){
+            $output = shell_exec($generate . " 2>&1");
+        }else{
+            exec($generate, $output);
+        }
 
         if ($this->debug == TRUE):
             echo $generate . "<br /><br />";

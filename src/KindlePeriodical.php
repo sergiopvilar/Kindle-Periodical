@@ -1,12 +1,11 @@
 <?php
 
-include_once dirname(__FILE__)."/vendor/autoload.php";
+namespace Kindle;
 
-// namespace
+include_once dirname(__FILE__)."/vendor/autoload.php";
 use Rain\Tpl;
 
-class KindlePeriodical
-{
+class Periodical{
 
     private $title;
     private $creator;

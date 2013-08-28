@@ -43,7 +43,7 @@ First you need to create an array with the content of the periodical:
 	
 With this, you can now generate your .mobi file with KindlePeriodical:
 
-     $ebook = new KindlePeriodical(array(
+     $ebook = new \Kindle\Periodical(array(
         
         "outputFolder" => "out",
         

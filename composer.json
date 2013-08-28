@@ -9,8 +9,12 @@
             "name": "Sérgio Vilar",
             "email": "vilar@me.com"
         }
-    ],
+    ],    
+    "autoload": {
+        "psr-0": { "Kindle": "src/" }
+    },
     "require": {
+        "php": ">=5.3.0",
         "rain/raintpl": "dev-master"
     },
     "minimum-stability": "dev"  

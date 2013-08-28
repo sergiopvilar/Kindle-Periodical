@@ -1,0 +1,17 @@
+{
+    "name": "sergiovilar/Kindle-Periodical",
+    "type": "library",
+    "description": "Php class that helps to build kindle periodicals ",
+    "homepage":"https://github.com/sergiovilar/Kindle-Periodical",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sérgio Vilar",
+            "email": "vilar@me.com"
+        }
+    ],
+    "require": {
+        "rain/raintpl": "dev-master"
+    },
+    "minimum-stability": "dev"  
+}

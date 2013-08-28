@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "38b7c9ceeb01c26e38153f3c811a8164",
+    "packages": [
+        {
+            "name": "rain/raintpl",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rainphp/raintpl3.git",
+                "reference": "4fe17e36f03feecf332f20b99204527c65334a25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rainphp/raintpl3/zipball/4fe17e36f03feecf332f20b99204527c65334a25",
+                "reference": "4fe17e36f03feecf332f20b99204527c65334a25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Rain": "library/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Federico Ulfo",
+                    "email": "rainelemental@gmail.com",
+                    "homepage": "http://github.com/rainphp"
+                },
+                {
+                    "name": "Rain Community"
+                }
+            ],
+            "description": "easy and fast template engine",
+            "homepage": "http://raintpl.com",
+            "time": "2013-08-26 14:45:45"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "rain/raintpl": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

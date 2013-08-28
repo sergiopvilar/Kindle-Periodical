@@ -1,6 +1,9 @@
 <?php
 
-include_once dirname(__FILE__)."/inc/rain.tpl.class.php";
+include_once dirname(__FILE__)."/vendor/autoload.php";
+
+// namespace
+use Rain\Tpl;
 
 class KindlePeriodical
 {
@@ -23,9 +26,14 @@ class KindlePeriodical
     function __construct($data)
     {
 
-        try{
+        try{            
 
-            raintpl::$tpl_dir = dirname(__FILE__)."/tpl/";
+            // config
+            $config = array(
+                    "tpl_dir" => dirname(__FILE__)."/tpl/",
+             );
+
+            Tpl::configure( $config );            
 
             if(!empty($data['debug']))
                 $this->setDebug($data['debug']);
@@ -201,7 +209,7 @@ class KindlePeriodical
 
     private function getTemplate($template, $data){
 
-        $tpl = new raintpl();
+        $tpl = new Tpl;
 
         foreach($data as $key=>$value){
             $tpl->assign($key, $value);

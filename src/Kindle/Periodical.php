@@ -25,14 +25,14 @@ class Periodical{
     function __construct($data)
     {
 
-        try{            
+        try{
 
             // config
             $config = array(
                     "tpl_dir" => dirname(__FILE__)."/tpl/",
              );
 
-            Tpl::configure( $config );            
+            Tpl::configure( $config );
 
             if(!empty($data['debug']))
                 $this->setDebug($data['debug']);

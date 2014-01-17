@@ -29,7 +29,7 @@ class Periodical{
 
             // config
             $config = array(
-                    "tpl_dir" => dirname(__FILE__)."/tpl/",
+                    "tpl_dir" => dirname(dirname(__FILE__))."/tpl/",
              );
 
             Tpl::configure( $config );

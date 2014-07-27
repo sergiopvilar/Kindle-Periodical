@@ -2,7 +2,7 @@
 
 namespace Kindle;
 
-include_once dirname(__FILE__)."/vendor/autoload.php";
+include_once dirname(__FILE__)."/../../vendor/autoload.php";
 use Rain\Tpl;
 
 class Periodical{
@@ -24,7 +24,7 @@ class Periodical{
 
     function __construct($data)
     {
-
+        //ob_start();
         try{
 
             // config
@@ -50,6 +50,7 @@ class Periodical{
             // Create folders
             $this->createAppDirectory();
             $this->createDirectory();
+
 
         } catch(Exception $e){
             $this->debug($e->getMessage());
@@ -447,10 +448,8 @@ class Periodical{
 
     public function downloadFile()
     {
-
-        $file_url = 'http://'.$_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"] . $this->getFilename();
-        header('location:' . $file_url);
-
+        $file_url = 'http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']) . "/".$this->getFilename();
+        print '<script type="text/javascript">window.top.location.href = "'. $file_url .'";</script>';
     }
 
     public function deleteFile()

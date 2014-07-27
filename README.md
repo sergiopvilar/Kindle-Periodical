@@ -3,14 +3,15 @@ Kindle Periodical
 
 Php class that helps to build kindle periodicals
 
-**Important:** You need to add [KindleGen](http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211) to your path to run KindlePeriodical
+**Important:** You need to add [KindleGen](http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211) as a command to run KindlePeriodical
 
 ## Usage
+**(Example can be found on example.php)**
 
 First you need to create an array with the content of the periodical:
 
 	$content = array(
-		
+
 		// Array of sections
 		array(
 			'id' => '0',
@@ -24,7 +25,7 @@ First you need to create an array with the content of the periodical:
 				)
 			)
 		),
-		
+
 		array(
 			'id' => '1',
 			'name' => 'My toher section',
@@ -40,13 +41,13 @@ First you need to create an array with the content of the periodical:
 
 
 	);
-	
+
 With this, you can now generate your .mobi file with KindlePeriodical:
 
      $ebook = new \Kindle\Periodical(array(
-        
+
         "outputFolder" => "out",
-        
+
         // Optional arguments:
         "shell" => false, // KindlePeriodical will use exec instead of shell_exec
         "debug" => true
